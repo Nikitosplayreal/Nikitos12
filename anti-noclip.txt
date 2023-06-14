@@ -1,0 +1,43 @@
+function create1 ()
+	
+	local b = Instance.new("Part")
+	b.Parent = workspace
+	b.Name = "Parts"
+	b.Position = Vector3.new(-23.69, 0.5, -29.72)
+	b.Size = Vector3.new(1, 3, 4)
+	
+	
+end
+
+
+
+function create ()
+	
+	local b = Instance.new("Frame")
+	b.Parent = game.Players.iammem228.PlayerGUI.ScreenGUI
+	b.Name = "fr"
+	b.Position = Vector2.new({0.768, 0},{0.09, 0})
+	b.Size = Vector2.new({0, 224},{0, 100})
+	
+end
+
+create()
+
+function create2()
+	
+	local b = Instance.new("TextButton")
+	b.Parent = game.Players.iammem228.PlayerGUI.ScreenGUI.fr
+	b.Name = "by"
+	b.Position = Vector2.new({0.768, 0},{0.09, 0})
+	b.Size = Vector2.new({0, 224},{0, 100})
+	b.Text = "button"
+	
+end
+
+create2()
+
+game.Players.iammem228.PlayerGUI.ScreenGUI.fr.by.Activated:Connect(function()
+
+	create1()
+
+end)
